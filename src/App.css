@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./Images/default.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: "Palatino", "Book Antiqua", serif;
+    height: 92.5vh;
+}
+
+#intro {
+    position: absolute;
+    padding: 40px 25px;
+    position: center;
+    background-color: transparent;
+}
+
+#weatherContainer {
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 5px black;
+    padding: 35px;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+#weatherContainer h1 {
+    margin: 5px;
+    font-size: 42px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#searchContainer {
+    padding: 20px;
+    margin-left: 57%;
+    padding-top: 40px;
+}
+#searchContainer input {
+    width: 200px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#searchContainer button {
+    background-color:skyblue;
+    color: white;
+    width: 55px;
+}
+#searchContainer button:hover{
+    background-color:rgb(21, 0, 97);
+    cursor: pointer;
+}
+.searchControl {
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px 5px;
+}
+
+.searchControl1 {
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+@media (min-width: 768px) {
+
+    #searchContainer input{
+        width: 50vh;
+        height: 5.1vh;
+    }
+    #searchContainer button {
+        width: 10vh;
+        height: 5.3vh;
+        
+    }
+}
+#weatherMain {
+    display: block;
+    margin-bottom: 20px;
+}
+#weatherMain div {
+    display: inline-block;
+}
+#weatherDescriptionHeader {
+    font-size: 28px;
+    vertical-align: 50%;
+}
+#temperature {
+    font-size: 38px;
+    vertical-align: 25%;
+}
+.bottom-details {
+    display: block;
+    font-size: 24px;
+    text-align: right;
+}
+hr {
+    margin-bottom: 20px;
+}
